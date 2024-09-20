@@ -92,14 +92,16 @@ Please install libraries and configure the board before doing this step.
 5.	To ensure that the code is working, select Sketch > Verify/Compile.
 7.	To upload any code, the ESP32 has to be put into upload mode. While holding the Boot button (between the header and outgoing wire, labeled “Boot”), press and release the Reset button (labeled “Reset”). You can now release the Boot button.
 8.	If the code compiled successfully, upload the code to the microprocessor by selecting Sketch > Upload.
-9.	To run the program that was uploaded to the microcontroller, press the Reset button.
+9.	To run the program that was uploaded to the microcontroller, press the Reset button. Note that this will not do anything or throw errors until all the electronics are wired together.
    
 Since we haven't connected any of the other components this will likely fail or do nothing. Steps 7-9 are still important though because after installing all the electronics, it will be difficult to access the USB-C port on the microcontroller.
 
 
-## Mounting the Electronics
-In order to protect the electronics and ensure that they do not interfere with each other, it is important to mount the components in a secure fashion.
-WIP
+## Wiring the Electronics
+Finally, we can connect all the electronics together to make evyerthing work! Below is a diagram of where each jumper wire connects to. Note that the group of 4-wires from the center of the ESP32-S3 represents the STEMMA-QT connector; so a STEMMA-QT connector should be used there.
+![image](https://github.com/user-attachments/assets/42bd2f3b-0343-4514-ac82-d25ee13a91d2)
+
+
 
 ## Wiring the Electronics
 The order in which you connect the electronics should not matter. For the STEMMA QT Cable ensure that it is properly oriented by checking that the holes at the end of the cable match the pins in the ports.
